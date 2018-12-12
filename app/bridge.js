@@ -1,4 +1,5 @@
 class Bridge {
+
     static init() {
 
     }
@@ -6,6 +7,7 @@ class Bridge {
     static start() {
 
     }
+
 }
 
 module.exports = Bridge;
