@@ -1,0 +1,24 @@
+{
+  "name": "aibox",
+  "version": "1.0.0",
+  "description": "A networking gatekeeper for arduinos.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node run.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Iainmon/aibox.git"
+  },
+  "author": "Iain Moncrief",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Iainmon/aibox/issues"
+  },
+  "homepage": "https://github.com/Iainmon/aibox#readme",
+  "dependencies": {
+    "async-threading": "^1.0.2",
+    "ejs": "^2.6.1",
+    "microseconds": "^0.1.0"
+  }
+}
