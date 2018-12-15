@@ -1,4 +1,4 @@
-const events = [
+var events = [
     {
         name : 'example-event', //event name
         channel : 55,
@@ -9,7 +9,7 @@ const events = [
 ];
 
 // See API docs for API function reference.
-const scripts = [
+var scripts = [
     {
         boot : function () {
             // All require statements and file reading must be called in the boot method.
@@ -41,8 +41,22 @@ const scripts = [
     }
 ];
 
+var sockets = [
+    {
+        url : '/',
+
+        controller : function (request) {
+            return {
+                code : 200,
+                
+            }
+        },
+    }
+];
+
 // Don't edit any lines after this!
 module.exports = {
     scripts : scripts,
-    events : events
+    events : events,
+    sockets : sockets
 };
