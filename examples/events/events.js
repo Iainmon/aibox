@@ -48,7 +48,6 @@ var sockets = [
         controller : function (request) {
             return {
                 code : 200,
-                
             }
         },
     }
