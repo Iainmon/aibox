@@ -15,7 +15,7 @@ class Hardware {
             });
         });
     }
-
+    
     static shutdown() {
 
     }

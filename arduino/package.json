@@ -1,0 +1,17 @@
+{
+  "name": "aibox-arduino",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "wine run"
+  },
+  "author": "Iain Moncrief",
+  "license": "ISC",
+  "dependencies": {
+    "grapejuice": "^0.1.5"
+  }
+}

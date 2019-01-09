@@ -1,12 +1,13 @@
-#include <iostream>
-#include <string>
 #include "Aibox.h"
 
 using namespace std;
 
 AiBoxAction::AiBoxAction(std::function< void() > functocall, std::string actionId) {
     _functocall = functocall;
-    _actionId = actionId;
+    actionId = actionId;
+}
+std::string AiBoxAction::getActionId() {
+    return actionId;
 }
 
 void AiBoxAction::callAction() {
@@ -31,13 +32,14 @@ void Aibox::fireAll() {
     }
 }
 
-void myFunction() {
-    cout << "hello";
+void Aibox::callAction(std::string actionId) {
+    for(std::size_t i = 0; i < _registeredActions.size(); ++i) {
+        if (_registeredActions[i].actionId == actionId) {
+            _registeredActions[i].callAction();
+        }
+    }
 }
 
-int main() {
-    Aibox aibox(13);
-    aibox.registerAction("function1", myFunction);
-    aibox.fireAll();
-    return 0;
+bool Aibox::avalible() {
+    return true;
 }
